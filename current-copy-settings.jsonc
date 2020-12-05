@@ -4,10 +4,8 @@
   "editor.comments.ignoreEmptyLines": false,
   //emove trailing auto inserted whitespace.
   "editor.trimAutoWhitespace": false,
-  //Highlight matching brackets.
-  "editor.matchBrackets": false,
-  //Controls whether an active snippet prevents quick suggestions.
-  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  // Controls whether snippets are shown with other suggestions and how they are sorted.
+  "editor.snippetSuggestions": "top",
   //Controls whether the Go to Definition mouse gesture always opens the peek widget.
   "editor.definitionLinkOpensInPeek": true,
   //Scrolling speed multiplier when pressing Alt.
@@ -17,8 +15,8 @@
   //Controls whether the minimap is shown.
   "editor.minimap.enabled": false,
   //Controls the font size in pixels.
-  "editor.fontSize": 14,
-  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontSize": 17,
+  "editor.fontFamily": "'JetBrains Mono'",
   "editor.fontWeight": "300",
   //Controls the letter spacing in pixels.
   "editor.letterSpacing": 1.7,
@@ -27,7 +25,7 @@
   // The number of spaces a tab is equal to. This setting is overridden based on the file contents when `editor.detectIndentation` is on.
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
-  "editor.wordWrap": "on",
+  "editor.wordWrap": "bounded",
   // Controls whether suggestions should be accepted on commit characters. For example, in JavaScript, the semi-colon (`;`) can be a commit character that accepts a suggestion and types that character.
   "editor.acceptSuggestionOnCommitCharacter": true,
   // Enable/Disable ActiveFileInStatusBar
@@ -61,15 +59,10 @@
   },
   "editor.cursorBlinking": "smooth",
   "editor.acceptSuggestionOnEnter": "off",
-  "editor.snippetSuggestions": "top",
   //---------------------------end of editor--------------------------\\
   //!-----------------------------------------------------------------
   //------------------beginning of explorer settingsr-----------------\\
   "explorer.sortOrder": "type",
-  //------------------end of explorer settingsr-----------------------\\
-  //!------------------------------------------------------------
-  //------------beginning of workbench settingsr----------------------\\
-  "workbench.colorTheme": "Material Monokai High Contrast",
   "workbench.sideBar.location": "left",
   "workbench.activityBar.visible": true,
   "workbench.editor.highlightModifiedTabs": true,
@@ -84,7 +77,9 @@
   //------------------beginning of extension settingsr---------------\\
   "markdown.preview.openMarkdownLinks": "inEditor",
   "vsicons.presets.jsOfficial": true,
-  "settingsSync.ignoredExtensions": ["doi.fileheadercomment"],
+  "settingsSync.ignoredExtensions": [
+    "doi.fileheadercomment"
+  ],
   "better-comments.tags": [
     {
       "tag": "!",
@@ -98,7 +93,7 @@
     {
       "tag": "?",
       "color": "#0080FF",
-      "strikethrough": true,
+      "strikethrough": false,
       "underline": false,
       "backgroundColor": "transparent",
       "bold": false,
@@ -143,6 +138,33 @@
     {
       "tag": "-",
       "color": "#FFFF00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": true
+    },
+    {
+      "tag": "&",
+      "color": "#0B0000",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "#FFFFFF",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": "@",
+      "color": "#9D1027",
+      "strikethrough": false,
+      "underline": true,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": true
+    },
+    {
+      "tag": "%",
+      "color": "#5BCF90",
       "strikethrough": false,
       "underline": false,
       "backgroundColor": "transparent",
@@ -196,6 +218,9 @@
   "[shellscript]": {
     "files.eol": "\n"
   },
+  "[python]": {
+    "editor.tabSize": 4
+  },
   //---emmet---//
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.syntaxProfiles": {
@@ -208,7 +233,11 @@
   //----------------------end of language features--------------------\\
   //!-----------------------------------------------------------------
   //--------------beginning of terminal settings------------\\
+  // PowerShell
+  // Bash on Ubuntu (on Windows)
+  // PowerShell
   "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
+  "terminal.integrated.windowsEnableConpty": false,
   "terminal.integrated.fontFamily": "monospace",
   //----------------------end of terminal--------------------\\
   //!-----------------------------------------------------------------
@@ -226,7 +255,7 @@
     "*/_MACOSX": true,
     "/*ini": true,
     "desktop.ini": true,
-    "*/**/node_modules/": true,
+    "*/**/node_modules/": false,
     "wp-includes/": true,
     "wp-admin/": true,
     "wp-*.*": true,
@@ -276,10 +305,16 @@
   //------------------end of file settings------------------------------\\
   //!-----------------------------------------------------------------
   //--------------beginning of appearence settings------------\\
-  "window.zoomLevel": -2,
+  "window.zoomLevel": -3,
   //------------------end of file appearence------------------------------\\
   //!-----------------------------------------------------------------
   //====================MISC=====================\\
+  // Render vertical rulers after a certain number of
+  // monospace characters. Use multiple values for multiple
+  // rulers. No rulers are drawn if array is empty
+  "editor.rulers": [
+    100
+  ],
   "update.mode": "start",
   "git.autofetch": true,
   "git.allowForcePush": true,
@@ -309,14 +344,52 @@
   "markdown-preview-enhanced.enableHTML5Embed": true,
   "markdown.extension.preview.autoShowPreviewToSide": false,
   "editor.renderIndentGuides": false,
-  "workbench.iconTheme": "simple-icons",
+  "workbench.iconTheme": "material-icon-theme",
   "files.maxMemoryForLargeFilesMB": 8000,
   "liveServer.settings.donotShowInfoMsg": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "markdown-preview-enhanced.singlePreview": false,
-  "workbench.tree.indent": 20,
+  "workbench.tree.indent": 28,
   "workbench.tree.renderIndentGuides": "always",
   "debug.onTaskErrors": "showErrors",
   "problems.showCurrentInStatus": true,
-  "settingsSync.ignoredSettings": ["-jupyter.alwaysTrustNotebooks"]
+  "settingsSync.ignoredSettings": [
+    "-php.validate.executablePath"
+  ],
+  "workbench.colorTheme": "Monokai Classic",
+  "php.validate.executablePath": "C:\\Program Files\\NetBeans-12.1\\netbeans\\bin\\netbeans64.exe",
+  "liveServer.settings.useWebExt": true,
+  "git.detectSubmodulesLimit": 5,
+  "git.ignoreMissingGitWarning": true,
+  "task.quickOpen.skip": true,
+  "editor.matchBrackets": false,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.enableBell": true,
+  "editor.wordWrapColumn": 150,
+  "problems.decorations.enabled": false,
+  "outline.problems.badges": false,
+  "html.validate.styles": false,
+  "css.lint.fontFaceProperties": "ignore",
+  "editor.unusualLineTerminators": "auto",
+  "emmet.triggerExpansionOnTab": true,
+  "editor.formatOnSaveMode": "modifications",
+  // Ignore extension recommendations
+  "extensions.ignoreRecommendations": true,
+  // Confirm before synchronizing git repositories
+  "git.confirmSync": false,
+  // Commit all changes when there are no staged changes
+  "git.enableSmartCommit": true,
+  // Whether to lint Python files using pylint
+  "python.linting.pylintEnabled": true,
+  // Overrides colors from the currently selected color theme.
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#1d771d",
+    "statusBar.foreground": "#eeffff",
+    "titleBar.activeBackground": "#282b3c",
+    "titleBar.activeForeground": "#eeefff",
+    // Controls font aliasing method in the workbench
+    "workbench.fontAliasing": "antialiased",
+    "explorer.confirmDragAndDrop": false
+  },
 }
