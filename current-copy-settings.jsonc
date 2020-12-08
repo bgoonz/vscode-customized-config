@@ -356,7 +356,7 @@
   "settingsSync.ignoredSettings": [
     "-php.validate.executablePath"
   ],
-  "workbench.colorTheme": "Monokai Classic",
+  "workbench.colorTheme": "Monokai",
   "php.validate.executablePath": "C:\\Program Files\\NetBeans-12.1\\netbeans\\bin\\netbeans64.exe",
   "liveServer.settings.useWebExt": true,
   "git.detectSubmodulesLimit": 5,
