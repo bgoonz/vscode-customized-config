@@ -1,0 +1,340 @@
+{
+  //----------------beginning of editor settings--------------------\\
+  "editor.comments.ignoreEmptyLines": false,
+  "editor.trimAutoWhitespace": false,
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.definitionLinkOpensInPeek": true,
+  "editor.fastScrollSensitivity": 9,
+  "editor.suggest.shareSuggestSelections": true,
+  "editor.minimap.enabled": false,
+  "editor.fontSize": 12,
+  "editor.fontFamily": "Consolas, 'Courier New', monospace",
+  "editor.fontWeight": "350",
+  "editor.letterSpacing": 1.2,
+  "editor.lineHeight": 26,
+  "editor.fontLigatures": true,
+  // The number of spaces a tab is equal to. This setting is overridden based on the file contents when `editor.detectIndentation` is on.
+  "editor.tabSize": 4,
+  "editor.detectIndentation": false,
+  "editor.wordWrap": "on",
+  "editor.semanticTokenColorCustomizations": {
+    "[One Dark Pro]": {
+      // Apply to this theme only
+      "enabled": true,
+      "rules": {
+        "magicFunction:python": "#ee0000",
+        "function.declaration:python": "#990000",
+        "*.decorator:python": "#0000dd",
+        "*.typeHint:python": "#5500aa",
+        "*.typeHintComment:python": "#aaaaaa"
+      }
+    }
+  },
+  // Controls whether suggestions should be accepted on commit characters. For example, in JavaScript, the semi-colon (`;`) can be a commit character that accepts a suggestion and types that character.
+  "editor.acceptSuggestionOnCommitCharacter": true,
+  // Enable/Disable ActiveFileInStatusBar
+  // Show fullpath or relative path in status bar.
+  // Reveal the active file in the file system.
+  // Controls the delay in ms after which quick suggestions will show up.
+  "editor.quickSuggestionsDelay": 10,
+  // Controls if suggestions should automatically show up when typing trigger characters
+  "editor.suggestOnTriggerCharacters": true,
+  // Controls if pressing tab inserts the best suggestion and if tab cycles through other suggestions
+  "editor.tabCompletion": "on",
+  // Controls whether sorting favours words that appear close to the cursor
+  "editor.suggest.localityBonus": true,
+  "editor.suggestSelection": "first",
+  // Enable word based suggestions
+  "editor.wordBasedSuggestions": true,
+  // Enable parameter hints
+  "editor.parameterHints.enabled": true,
+  "editor.suggest.showTypeParameters": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.largeFileOptimizations": false,
+  "editor.renderControlCharacters": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.matchBrackets": "always"
+  },
+  "editor.cursorBlinking": "smooth",
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.snippetSuggestions": "top",
+    "files.hotExit": "onExitAndWindowClose",
+    "explorer.enableDragAndDrop": false,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    "editor.lineNumbers": "on",
+    "editor.minimap.enabled": false,
+    "editor.mouseWheelZoom": true,
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "none",
+    "editor.trimAutoWhitespace": true,
+    "editor.wordWrap": "off",
+    "editor.wordWrapColumn": 180,
+    "[pascal]": {
+        "files.encoding": "windows1252"
+    },
+    "[markdown]": {
+        "editor.wordWrap": "wordWrapColumn"
+    },
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.rendererType": "experimentalWebgl",
+    "diffEditor.ignoreTrimWhitespace": true,
+    "diffEditor.renderSideBySide": true,
+    "breadcrumbs.enabled": true,
+  //---------------------------end of editor--------------------------\\
+  //!-----------------------------------------------------------------
+  //------------------beginning of explorer settingsr-----------------\\
+  "explorer.sortOrder": "type",
+  "workbench.sideBar.location": "left",
+  "workbench.activityBar.visible": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editorAssociations": {
+    "*.md": "default",
+    "*.ipynb": "jupyter-notebook",
+    "*.zip": "default",
+    "*.db3": "default",
+    "*.gif": "cweijan.officeViewer",
+    "*.ico": "cweijan.officeViewer"
+  },
+  //---------------------------end of workbench----------------------\\
+  //!------------------------------------------------------------
+  //------------------beginning of extension settingsr---------------\\
+  "markdown.preview.openMarkdownLinks": "inEditor",
+  "vsicons.presets.jsOfficial": true,
+  "settingsSync.ignoredExtensions": ["doi.fileheadercomment"],
+  //---------------------------end of extensions----------------------\\
+  //!-------------------------------------------------------------------
+  //--------------beginning of language-features settingsr------------\\
+  "javascript.format.insertSpaceAfterConstructor": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "svipas.prettier-plus"
+  },
+  //---markdown---\\
+  //---typescript---\\
+  "typescript.format.insertSpaceAfterConstructor": true,
+  "typescript.format.enable": false,
+  "typescript.reportStyleChecksAsWarnings": false,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+  //---python---\\
+  "python.languageServer": "Pylance",
+  //---emmet---//
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "jsx-sublime-babel-tags": "javascriptreact"
+  },
+  "terminal.integrated.fontFamily": "monospace",
+  //----------------------end of terminal--------------------\\
+  //!-----------------------------------------------------------------
+  //--------------beginning of file settings------------\\
+  "files.exclude": {
+    "*.a": true,
+    "*.class": true,
+    "*.db": false,
+    "*.dll": true,
+    "*.dylib": true,
+    "*.exe": true,
+    "*.git": false,
+    "*.idb": true,
+    "*.ini": true,
+    "*.o": true,
+    "*.obj": true,
+    "*.pdb": true,
+    "*.pyc": true,
+    "*.pyo": true,
+    "*.sdf": true,
+    "*.so": true,
+    "*.sublime-workspace": true,
+    "*.suo": true,
+    "**__MACOSX": true,
+    "**_MACOSX": true,
+    "**/__MACOSX": true,
+    "**/_MACOSX": true,
+    "**/.DS_Store": true,
+    "**/.git": false,
+    "**/.svn": false,
+    "**/**.ini": true,
+    "**/desktop.ini": true,
+    "*/_MACOSX": true,
+    "*/**/coverage/": true,
+    "*/**/infinitewp/": true,
+    "desktop.ini": true,
+    "wp-config.*": false,
+    "xmlrpc.php": true
+  },
+  "files.associations": {
+    "*.m": "matlab",
+    "*.md": "markdown",
+    "*.tex": "doctex",
+    "*.html": "html"
+  },
+  "breadcrumbs.filePath": "on",
+  "files.autoSave": "afterDelay",
+  "files.insertFinalNewline": true,
+"git.allowForcePush": true,
+  "explorer.confirmDelete": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.saveConflictResolution": "overwriteFileOnDisk",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+//   "terminal.integrated.profiles.linux": {
+//     "zsh (login)": {
+//       "path": "zsh",
+//       "args": ["-l"]
+//     }
+  "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+        "source": "PowerShell",
+        "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+        "path": [
+            "${env:windir}\\Sysnative\\cmd.exe",
+            "${env:windir}\\System32\\cmd.exe"
+        ],
+        "args": [],
+        "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+        "source": "Git Bash"
+    },
+    "C:\\WINDOWS\\System32\\wsl.exe (migrated)": {
+        "path": "C:\\WINDOWS\\System32\\wsl.exe",
+        "args": []
+    },
+    "JavaScript Debug Terminal": {
+        "extensionIdentifier": "ms-vscode.js-debug",
+        "icon": "debug",
+        "id": "extension.js-debug.debugTerminal",
+        "title": "JavaScript Debug Terminal"
+    },
+    "C:\\Program Files\\PowerShell\\7\\pwsh.exe (migrated)": {
+        "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+        "args": []
+    }
+},
+  "files.autoSaveDelay": 100,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.inlineSuggest.enabled": true,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.statusBar.enabled": false,
+    "gitlens.recentChanges.highlight.locations": [
+        "line",
+        "gutter",
+        "overview"
+    ],
+    "gitlens.keymap": "none",
+    "gitlens.menus": {
+        "editor": false,
+        "editorGroup": {
+            "blame": true,
+            "compare": true,
+            "history": false,
+            "remote": false
+        },
+        "editorTab": {
+            "compare": false,
+            "history": false,
+            "remote": true
+        },
+        "explorer": {
+            "compare": true,
+            "history": true,
+            "remote": true
+        }
+    },
+    "gitlens.blame.heatmap.enabled": false,
+    "gitlens.blame.highlight.enabled": false,
+    "gitlens.hovers.enabled": false,
+    "gitlens.advanced.telemetry.enabled": false,
+    "gitlens.views.lineHistory.enabled": false,
+    "gitlens.views.search.enabled": false,
+    "gitlens.views.fileHistory.enabled": false,
+    "gitlens.mode.statusBar.enabled": false,
+},
+
+  "notebook.cellFocusIndicator": "border",
+  "notebook.cellToolbarVisibility": "hover",
+  "notebook.consolidatedRunButton": true,
+"notebook.showFoldingControls": "always",
+  "workbench.iconTheme": "material-icon-theme",
+"git.enableSmartCommit": true,
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+// Controls the font size in pixels of the terminal, this defaults to editor.fontSize's value.
+"terminal.integrated.fontSize": 10,
+// Controls the line height of the terminal, this number is multipled by the terminal font size to get the actual line-height in pixels.
+"terminal.integrated.lineHeight": 1.2,
+  "jupyter.allowUnauthorizedRemoteConnection": true,
+  "jupyter.changeDirOnImportExport": true,
+  "jupyter.generateSVGPlots": true,
+  "jupyter.interactiveWindowMode": "single",
+    "jupyter.jupyterLab.allowUnauthorizedRemoteConnection": true,
+  "telemetry.telemetryLevel": "off",
+  "git.autofetch": true,
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": true
+  },
+  "workbench.editor.untitled.hint": "hidden",
+"workbench.tree.indent": 10,
+  "tabnine.experimentalAutoImports": true,
+"files.maxMemoryForLargeFilesMB": 8000,
+"diffEditor.ignoreTrimWhitespace": false,
+"editor.dragAndDrop": false,
+"editor.minimap.showSlider": "always",
+"window.zoomLevel": -1,
+"[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"terminal.external.windowsExec": "C:\\Users\\bryan\\AppData\\Local\\Microsoft\\WindowsApps\\ubuntu.exe",
+"javascript.referencesCodeLens.enabled": true,
+"javascript.referencesCodeLens.showOnAllFunctions": true,
+"window.titleBarStyle": "native",
+"git.autoStash": true,
+"settingsSync.ignoredSettings": [
+    "git.untrackedChanges"
+],
+"terminal.explorerKind": "external",
+"editor.unicodeHighlight.invisibleCharacters": false,
+
+}
